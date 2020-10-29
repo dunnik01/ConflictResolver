@@ -18,9 +18,17 @@ document.querySelector(".img2").setAttribute("src",imageName2);
 if(randomNumber1>randomNumber2){
   document.querySelector("h1").innerHTML=" <i class='icon fas fa-male'></i><i class='icon fas fa-flag'></i> Husband Won";
   document.querySelector("h1").classList.add("player1");
+  setTimeout(function(){
+    document.querySelector("h1").classList.remove("player1");
+    document.querySelector("h1").innerHTML="Conflict Resolver";
+  },2000);
 }else if(randomNumber2>randomNumber1){
 document.querySelector("h1").innerHTML="Wife Won <i class='icon fas fa-female'></i> <i class='icon fas fa-flag'>";
 document.querySelector("h1").classList.add("player1");
+  setTimeout(function(){
+  document.querySelector("h1").classList.remove("player1");
+  document.querySelector("h1").innerHTML=" Conflict Resolver ";
+},2000);
 }else{
   document.querySelector("h1").innerHTML="Draw!!!"  ;
   document.querySelector("h1").classList.remove("player1");
