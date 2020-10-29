@@ -32,4 +32,7 @@ document.querySelector("h1").classList.add("player1");
 }else{
   document.querySelector("h1").innerHTML="Draw!!!"  ;
   document.querySelector("h1").classList.remove("player1");
+  setTimeout(function(){
+    document.querySelector("h1").innerHTML=" Conflict Resolver ";
+},2000);
 }
